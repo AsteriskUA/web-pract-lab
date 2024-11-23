@@ -1,0 +1,162 @@
+/* Базові стилі для всього документа */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Контейнер для кожного пункту */
+.section {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 2px dashed #007acc;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+/* Стилі для заголовків пунктів */
+.section-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #007acc;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #007acc;
+    padding-bottom: 5px;
+}
+
+/* Загальні стилі для всіх елементів */
+div, ul, li, a, form, p, input {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+/* Списки */
+ul {
+    list-style-type: decimal;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+li {
+    background-color: #f9f9f9;
+}
+
+/* Посилання */
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: #007acc;
+    font-weight: bold;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+a:hover {
+    background-color: #eef6ff;
+    color: #005999;
+}
+
+/* Поля вводу */
+input[type="text"], input[type="checkbox"], input[type="radio"] {
+    margin: 10px 0;
+    display: block;
+}
+
+/* Рамки для всіх елементів */
+div, p, ul, li, a, input {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Залишаємо стиль псевдоелементів */
+p::first-letter {
+    font-size: 36px;
+    color: #007acc;
+    font-weight: bold;
+}
+
+
+
+
+/* 1. Виділіть перший елемент <li> та надайте йому жирний шрифт */
+li:first-child {
+    font-weight: bold;
+}
+
+/* 2. Виберіть усі елементи <a>, які є останніми дочірніми елементами свого батька, і пофарбуйте їх у червоний колір */
+a:last-child {
+    color: red;
+}
+
+/* 3. Виберіть усі елементи input, які вимкнено (disabled), і надайте їм сірий фоновий колір */
+input:disabled {
+    background-color: grey;
+}
+
+/* 4. Виберіть усі елементи <p>, які є прямими дочірніми елементами елемента <div>, і надайте їм напівжирний шрифт */
+div > p {
+    font-weight: bold;
+}
+
+/* 5. Виберіть усі елементи, які мають атрибут href, що починається з https, і пофарбуйте їх у зелений колір */
+a[href^="https"] {
+    color: green;
+}
+
+/* 6. Виберіть усі елементи input, які мають атрибут type як text і обведіть їх рамкою 1 піксель суцільним синім кольором */
+input[type="text"] {
+    border: 1px solid blue;
+}
+
+/* 7. Виберіть усі елементи <li>, які є першими або останніми дочірніми елементами батьківського елемента, і встановіть для них розмір шрифту 24 пікселя */
+li:first-child, li:last-child {
+    font-size: 24px;
+}
+
+/* 8. Виберіть усі елементи <p>, які є нащадками елемента <div> і встановіть для них розмір шрифту 16 пікселів */
+div p {
+    font-size: 16px;
+}
+
+/* 9. Виберіть усі елементи <input> зі значенням checked, і надайте їм фонового кольору світло-блакитний */
+input:checked {
+    background-color: lightblue;
+}
+
+/* 10. Виділіть усі елементи <a>, які є прямими дочірніми елементами <li>, і підкресліть їх текстом */
+li > a {
+    text-decoration: underline;
+}
+
+/* 11. Виділіть усі елементи <li>, які є парними елементами батьківського елемента, і надайте їм жирний шрифт */
+li:nth-child(even) {
+    font-weight: bold;
+}
+
+/* 12. Виберіть усі елементи <input>, які мають атрибут типу text і не disabled, і надайте їм фоновий колір сірого кольору */
+input[type="text"]:not(:disabled) {
+    background-color: grey;
+}
+
+/* 13. Виберіть усі елементи <p>, які є першими дочірніми елементами батьківського елемента, і встановіть для них розмір шрифту 24 пікселя */
+p:first-child {
+    font-size: 24px;
+}
+
+/* 14. Виберіть елемент <li>, який йде після елементу з класом .special, і зробіть його перечеркнутим */
+.special + li {
+    text-decoration: line-through;
+}
+
+/* 15. Виділіть першу літеру кожного елемента <p> і надайте йому розмір шрифту 36 пікселів */
+p::first-letter {
+    font-size: 36px;
+}
+
+/* 16. Додайте ::after для кожного елемента <a> та надайте йому вміст ↗ */
+a::after {
+    content: " ↗";
+}
