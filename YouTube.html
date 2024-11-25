@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Flexbox Clone</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Підключення іконок Google Fonts -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+  <!-- Шапка -->
+  <header class="header">
+    <div class="header-left">
+      <div class="logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" alt="YouTube Logo">
+      </div>
+    </div>
+    <div class="header-center">
+      <input type="text" placeholder="Пошук" class="search-input">
+      <button class="search-button">🔍</button>
+    </div>
+    <div class="header-right">
+      <span class="material-icons">video_call</span>
+      <span class="material-icons">notifications</span>
+      <div class="profile">B</div>
+    </div>
+  </header>
+
+  <!-- Основний контейнер -->
+  <div class="container">
+    <!-- Бічна панель -->
+    <aside class="sidebar">
+      <ul>
+        <li><span class="material-icons">home</span> Головна</li>
+        <li><span class="material-icons">play_circle_outline</span> YouTube Shorts</li>
+        <li><span class="material-icons">subscriptions</span> Підписки</li>
+        <hr>
+        <li><span class="material-icons">person</span> Ваш канал</li>
+        <li><span class="material-icons">history</span> Історія</li>
+        <li><span class="material-icons">thumb_up</span> Вподобані відео</li>
+        <hr>
+        <li><span class="material-icons">expand_more</span> Показати більше</li>
+      </ul>
+    </aside>
+
+    <!-- Основний контент -->
+    <main>
+    <div class="video-grid">
+        <div class="video"><img src="https://i.ytimg.com/vi/2Vv-BfVoq4g/hqdefault.jpg" alt="Video 1"></div>
+        <div class="video"><img src="https://i.ytimg.com/vi/3JZ_D3ELwOQ/hqdefault.jpg" alt="Video 2"></div>
+        <div class="video"><img src="https://i.ytimg.com/vi/d1BFp7IOUDM/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLANxnH6qpa75-rGrp9JF4QqDKPZQQ" alt="Video 3"></div>
+        <div class="video"><img src="https://i.ytimg.com/vi/PL0B23uD05E/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLCFJtMqh0y_Of3D1qCHyz2a2h5R-A" alt="Video 4"></div>
+        <div class="video"><img src="https://i.ytimg.com/vi/MUANr-kxs-I/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLB5fvhD5Cju4V6ymMjShlZtlbtIfA" alt="Video 5"></div>
+        <div class="video"><img src="https://i.ytimg.com/vi/nIG3J8LH3bU/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDz-DWFmWMBYXWlCCFhnN_y-qGmjQ" alt="Video 6"></div>
+        <div class="video"><img src="https://i.ytimg.com/vi/RdkW3plOX6o/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLCVx7bHH_zZleUqqS5hcq2Ek1pMXw" alt="Video 7"></div>
+        <div class="video"><img src="https://i.ytimg.com/vi/JLMjpjjZwR4/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLA82lJ6niQXkkV9zLDUNCi2VwxNPg" alt="Video 8"></div>
+        <div class="video"><img src="https://i.ytimg.com/vi/kvn8N8HTqGE/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDXEh1fHXrq2pHEDT6QyKYYQBoFuw" alt="Video 9"></div>
+        <div class="video"><img src="https://i.ytimg.com/vi/WauKU6HNmJo/hqdefault.jpg?sqp=-oaymwEjCOADEI4CSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLAR3fQlpPfFAHIxPbQO7dz7pyqC8w" alt="Video 10"></div>
+        <div class="video"><img src="https://i.ytimg.com/vi/88RS7H0p8kQ/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDDvzdqxOj1Fv12Kebamy7SBQQGHw" alt="Video 11"></div>
+        <div class="video"><img src="https://i.ytimg.com/vi/dzvoVbGIAYA/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLBfub2CmRglk9dXTTouw63tF_5B9g" alt="Video 12"></div>
+        <div class="video"><img src="https://i.ytimg.com/vi/-QhOg-XnK3o/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDI_u1jZX396MDgWbNezGWFz5DkWg" alt="Video 13"></div>
+        <div class="video"><img src="https://i.ytimg.com/vi/dRO2c8dj3RY/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLAPGJ35MJDnon-cRZp2_BvclekMKQ" alt="Video 14"></div>
+        <div class="video"><img src="https://i.ytimg.com/vi/p7UNMQIjd50/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLCGR3UKwK27uXqWJbUs88cmQxip9g" alt="Video 15"></div>
+        <div class="video"><img src="https://i.ytimg.com/vi/mPKnYbcvabU/hq720.jpg?sqp=-oaymwEXCNAFEJQDSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLDdsTvlZWNCv4uHBRRyTeDwFTm6Yg" alt="Video 16"></div>
+    </div>
+    </main>
+  </div>
+</body>
+</html>
