@@ -1,74 +1,153 @@
+/* Загальний стиль */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
     padding: 20px;
-    line-height: 1.6;
+    background-color: #f0f8ff; /* Світлий блакитний фон */
+    color: #333;
 }
 
-h1 {
-    text-align: center;
-    color: #4a90e2;
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: white;
+    border-radius: 8px;
 }
 
-th, td {
+/* Верхня частина */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: #2c3e50; /* Темний синій */
+}
+
+.top-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.top-bar input {
+    padding: 5px 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.top-bar button {
+    padding: 8px 20px;
+    font-size: 1rem;
+    background-color: #ff6f61; /* Яскраво-червоний */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.top-bar button:hover {
+    background-color: #e45a50; /* Темніший червоний */
+}
+
+/* Основний контент */
+.grid-container {
+    display: flex;
+    gap: 20px;
+}
+
+/* Ліва колонка */
+.left-column {
+    flex: 1;
+    background-color: #f3e6fa; /* Пастельно-фіолетовий */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+
+.section {
+    margin-bottom: 20px;
+}
+
+.section h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: #1a5276; /* Темно-синій */
+}
+
+.editable {
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #ffffff; /* Білий */
+    min-height: 50px;
+    outline: none;
+    border-radius: 4px;
+}
+
+.editable:focus {
+    background-color: #f9f9f9; /* Світлий сірий */
+    border-color: #007BFF;
+}
+
+/* Права колонка */
+.right-column {
+    flex: 2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.day {
     border: 1px solid #ddd;
     padding: 10px;
-    text-align: center;
-    font-size: 1em;
+    border-radius: 8px;
 }
 
-th {
-    background-color: #4a90e2;
-    color: white;
-    font-weight: bold;
+.day:nth-child(1) {
+    background-color: #ffebcc; /* Світло-оранжевий для понеділка */
+}
+
+.day:nth-child(2) {
+    background-color: #cce7ff; /* Світло-блакитний для вівторка */
+}
+
+.day:nth-child(3) {
+    background-color: #d4edda; /* Світло-зелений для середи */
+}
+
+.day:nth-child(4) {
+    background-color: #ffe6e6; /* Світло-рожевий для четверга */
+}
+
+.day:nth-child(5) {
+    background-color: #fdfd96; /* Світло-жовтий для п'ятниці */
+}
+
+.day:nth-child(6) {
+    background-color: #d1c4e9; /* Лавандовий для суботи */
+}
+
+.day:nth-child(7) {
+    background-color: #ffccf9; /* Рожевий для неділі */
+}
+
+.day h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
     text-transform: uppercase;
+    color: #333; /* Темний текст */
 }
 
-tbody tr:nth-child(odd) {
-    background-color: #f4f6fa;
+.day .editable {
+    min-height: 100px;
+    border-radius: 4px;
+    padding: 10px;
 }
-
-tbody tr:nth-child(even) {
-    background-color: #ffffff;
-}
-
-td {
-    vertical-align: middle;
-}
-
-td:first-child {
-    font-weight: bold;
-    background-color: #eaf2fa;
-    color: #333;
-}
-
-td > b {
-    color: #4a90e2;
-    font-weight: bold;
-}
-
-td > br + span {
-    font-size: 0.9em;
-    color: #666;
-    font-style: italic;
-}
-
-tfoot td {
-    background-color: #e9ecef;
-    color: #333;
-    font-weight: bold;
-}
-
