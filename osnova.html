@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Planner</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Верхня частина -->
+        <header>
+            <h1>WEEKLY PLAN</h1>
+            <div class="top-bar">
+                <label for="week-of">WEEK OF</label>
+                <input type="text" id="week-of" placeholder="Enter date...">
+                <button onclick="clearAll()">Clear All</button>
+            </div>
+        </header>
+
+        <main class="grid-container">
+            <!-- Ліва частина -->
+            <aside class="left-column">
+                <div class="section">
+                    <h2>TOP 3 GOALS</h2>
+                    <div class="editable" contenteditable="true"></div>
+                    <div class="editable" contenteditable="true"></div>
+                    <div class="editable" contenteditable="true"></div>
+                </div>
+                <div class="section">
+                    <h2>EVERYTHING ELSE</h2>
+                    <div class="editable" contenteditable="true"></div>
+                    <div class="editable" contenteditable="true"></div>
+                    <div class="editable" contenteditable="true"></div>
+                    <div class="editable" contenteditable="true"></div>
+                </div>
+                <div class="section">
+                    <h2>NEXT WEEK</h2>
+                    <div class="editable" contenteditable="true"></div>
+                    <div class="editable" contenteditable="true"></div>
+                    <div class="editable" contenteditable="true"></div>
+                </div>
+            </aside>
+
+            <!-- Права частина -->
+            <section class="right-column">
+                <div class="day">
+                    <h2>MONDAY</h2>
+                    <div class="editable" contenteditable="true"></div>
+                </div>
+                <div class="day">
+                    <h2>TUESDAY</h2>
+                    <div class="editable" contenteditable="true"></div>
+                </div>
+                <div class="day">
+                    <h2>WEDNESDAY</h2>
+                    <div class="editable" contenteditable="true"></div>
+                </div>
+                <div class="day">
+                    <h2>THURSDAY</h2>
+                    <div class="editable" contenteditable="true"></div>
+                </div>
+                <div class="day">
+                    <h2>FRIDAY</h2>
+                    <div class="editable" contenteditable="true"></div>
+                </div>
+                <div class="day">
+                    <h2>SATURDAY</h2>
+                    <div class="editable" contenteditable="true"></div>
+                </div>
+                <div class="day">
+                    <h2>SUNDAY</h2>
+                    <div class="editable" contenteditable="true"></div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
