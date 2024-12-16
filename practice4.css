@@ -1,0 +1,310 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+#mainKeyboardArea{
+    background-color: rgb(172, 172, 172);
+    width: 94%;
+    height: 70vh;
+    border-radius: 50px;
+    border: 3px solid rgb(119, 119, 119);
+    padding: 5px;
+    gap: 15px;
+
+    display: grid;
+    grid-template-columns: 10px 4fr 1fr 1fr 10px;
+    grid-template-rows: 20px 1fr 4fr 20px;
+}
+
+.item{
+    border: 1px solid black;
+    border-radius: 10px;
+    border: none;
+    gap: 2px;
+}
+
+button{
+    box-shadow: 0px 0px 5px 1px rgb(65, 65, 65);
+}
+
+.item_1{
+    grid-column: 1/6;
+    grid-row: 2/3;
+    margin-left: 20px;
+    background-color: rgb(209, 209, 209);
+    display: grid;
+    grid-template-columns: 2fr 3fr repeat(4, 2fr) 1fr repeat(4, 2fr) 1fr repeat(4, 2fr) 2fr repeat(3, 2fr) 4fr repeat(3, 3fr) 3fr;
+    grid-template-rows: 20px 1fr 20px;
+    width: 95%;
+
+}
+
+.upItem{
+    grid-row: 2/3;
+}
+
+.upItem_1{
+    margin-left: 15px;
+}
+
+.standartButton{
+    width: 8vh;
+    height: 8vh;
+    background-color: white;
+    border: 5px double rgb(131, 131, 131);
+    border: 1mm groove  rgb(185, 185, 185);
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.standartButton:hover{
+    background-color: rgb(230, 229, 229);
+}
+
+.smallTextButton{
+    font-size: 12px;
+    line-height: 1;
+}
+
+hr{
+    border: none;
+    border-top: 1px solid black;
+
+}
+
+.roundYellowCheckbox{
+    width: 20px;
+    height: 20px;
+    appearance: none;
+    border: 2px solid rgb(105, 105, 105);
+    border-radius: 50%;
+    outline: none; /* прибирає обведення при фокусі */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.upItem_last{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.roundYellowCheckbox:checked {
+    background-color: yellow;
+}
+
+del{
+    text-decoration: none;
+}
+
+.textUpLine{
+    margin-bottom: -10px;
+}
+
+.item_2 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+
+    background-color: rgb(128, 128, 128);
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.LeftRow{
+    display: grid;
+    grid-template-columns: repeat(13, 1fr) 2fr;
+}
+
+.item_3 {
+    grid-column: 3/4;
+    grid-row: 3/4;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: brown3 ;
+}
+
+.item_3_containers{
+    width: 26vh;
+    background-color: rgb(128, 128, 128);
+    border: 1px solid rgb(128, 128, 128);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0px 0px 0px 2px rgb(124, 124, 124);
+
+}
+
+.doubleLongButton{
+    width: 16vh;
+}
+
+.threeLongButton{
+    width: 20vh;
+}
+
+.arrowTop{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.arrowLeft {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.item_4 {
+    grid-column: 4/5;
+    grid-row: 3/4;
+    margin-right: 30px;
+    background-color: rgb(128, 128, 128);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 10px;
+}
+
+.rightItem_8{
+    grid-column: 4/5;
+    grid-row: 2/4;
+}
+
+.hightButton{
+    width: 8vh;
+    height: 130px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.longButton{
+    width: 16vh;
+    height: 8vh;
+}
+
+.rightItem_15{
+    grid-row: 4/6;
+    grid-column: 4/5;
+}
+
+.rightItem_16{
+    grid-row: 5/6;
+    grid-column: 1/3;
+}
+
+.BigTextTwoLineButton{
+    font-size: 18px;
+}
+
+.rightItem_1_Button{
+    font-size: 16px;
+}
+
+.bigSymbol{
+    font-size: 30px;
+}
+
+.rightItem_8_Button{
+    padding-top: 4vh;
+    padding-left: 2vh;
+}
+
+.rightItem_15_Button{
+    display: flex;
+    padding-top: 6vh;
+}
+
+.standartFontSize{
+    font-size: 18px;
+}
+.textOnLeft{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    line-height: 1;
+}
+
+.textOnLeftCenter {
+    text-align: start;
+}
+
+.textOnRight {
+    text-align:end;
+}
+
+.textOnCenter{
+    text-align: center;
+}
+
+.gridFourSectorButton{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.secondGridRow{
+    grid-row: 2/3;
+}
+
+.firstGridColumn{
+    grid-column: 1/2;
+}
+
+.secondGridColumn{
+    grid-column: 2/3;
+}
+
+.buttonleftmoreThan1fr {
+    width: 12vh;
+}
+
+.longerButtomButton{
+    width: 10vh;
+}
+
+.space{
+    width: 50vh;
+}
+/* Updated styles for keyboard customization */
+#mainKeyboardArea {
+    background-color: #a9a9a9; /* Основа клавіатури сіра */
+    transform: scale(0.7); /* Масштабування клавіатури */
+}
+
+.standartButton {
+    background-color: #333; /* Фон клавіш злегка чорний */
+    color: #fff; /* Текст клавіш білий */
+    border: none;
+}
+
+.standartButton:hover {
+    background-color: #555; /* Світліший чорний при наведенні */
+}
+
+.roundYellowCheckbox:checked {
+    background-color: #00ff00; /* Підсвічування зеленим */
+}
+
